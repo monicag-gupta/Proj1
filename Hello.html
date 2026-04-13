@@ -5,7 +5,9 @@
     
   </head>
   <body>
-    <h1>
+    <button id="showBtn" type="button" onclick="showHeading()">Show H1</button>
+    <button id="hideBtn" type="button" onclick="hideHeading()">Hide H1</button>
+    <h1 id="mainHeading">
       H-Hyper : Being Super Interactive (HTML is very interactive as 
       it can be executed in any browser, and can get the data from 
       anywhere in the Web
@@ -48,6 +50,14 @@
       TS gets compiled into JS and then executed in HTML.
     </h2>
     <h2>NodeJs : NodeJs is a Front End Server to render JavaScript.</h2>
+    <script>
+      function hideHeading() {
+        document.getElementById('mainHeading').style.display = 'none';
+      }
+      function showHeading() {
+        document.getElementById('mainHeading').style.display = 'block';
+      }
+    </script>
   </body>
 </html>
 
